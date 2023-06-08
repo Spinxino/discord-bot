@@ -1,12 +1,10 @@
-import { execute } from "./botstats";
+const { SlashCommandBuilder } = require('discord.js');
 
-const { SlashCommandBuilder } = require('@discordjs/builders');
-
-export default [
-    data: new SlashCommandBuilder()
+module.exports = {
+	data: new SlashCommandBuilder()
     .setName('test')
     .setDescription('This is the test command!'),
-    async ,execute(interaction, client) {
-        await :interaction.reply({ content: 'The bot is working!' })
+    async execute(interaction, client) {
+        await interaction.reply('The bot is working!');
     }
-]
+}
