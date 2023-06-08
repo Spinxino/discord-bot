@@ -26,19 +26,19 @@ export async function execute(interaction, client) {
             new ButtonBuilder()
                 .setLabel('Primary Server')
                 .setStyle(ButtonStyle.link)
-                .setURL('https://discord.gg/6cQKAE9axE'),
+                .setURL(' DISCORD SERVER INVITE LINK '),
 
             new buttonBuilder()
                 .setLabel('Bot Invite')
                 .setStyle(ButtonStyle.link)
-                .setURL('https://discord.com/oauth2/authorize?client_id=868052396805349387&scope=bot')
+                .setURL(' INVITE BOT TO SERVER LINK ')
         );
 
     const embed = new EmbeedBuilder()
         .setColor("Blue");
         .setAuthor({ name: name, iconURL: icon})
         .setThumbnail(`${icon}`)
-        .setFooter({ text: "bot ID: 868052396805349387"})
+        .setFooter({ text: "bot ID: "})
         .setTimestamp()
         .addFields({ name: 'Server Number', value: `${clinet.guilds.cache.size}`, inline: true})
         .addFields({ name: 'Server Number', value: `${servercount}`, inline: true})
